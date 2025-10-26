@@ -293,12 +293,6 @@ We welcome improvements to:
 
 ---
 
-## 📜 License
-
-This project is licensed under the **MIT License** — free for modification, use, and redistribution.
-
----
-
 ## 📈 Author & Maintainer
 
 **Author:** Nare Vignesh
