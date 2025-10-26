@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/app:/app
+    environment:
+      - ENV=development
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./frontend/streamlit_app:/app
+    environment:
+      - ENV=development
+
+  orchestrator:
+    build:
+      context: ./orchestrator-sdk/python
+      dockerfile: Dockerfile
+    volumes:
+      - ./orchestrator-sdk/python:/app
+    environment:
+      - ENV=development
+
+networks:
+  default:
+    driver: bridge

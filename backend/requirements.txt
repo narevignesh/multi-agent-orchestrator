@@ -1,0 +1,10 @@
+FastAPI
+Flask
+uvicorn
+pydantic
+httpx
+pytest
+pytest-asyncio
+python-dotenv
+loguru
+streamlit

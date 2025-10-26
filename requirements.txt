@@ -1,0 +1,9 @@
+FastAPI
+Flask
+streamlit
+pydantic
+httpx
+pytest
+uvicorn
+python-dotenv
+loguru
